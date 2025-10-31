@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background and text */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c6ffdd, #fbd786, #f7797d);
+  color: #222;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: #004d00;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ffcc00;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover, .active {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  color: #fff;
+  background: linear-gradient(120deg, #16a085, #27ae60);
+  animation: fadeIn 1s ease-in;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero span {
+  color: #ffeb3b;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #ffeb3b;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffe600;
+  transform: scale(1.05);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Different Card Colors */
+.short { background: #ffb6b9; }
+.long { background: #fae3d9; }
+.game { background: #bbded6; }
+.ecommerce { background: #8ac6d1; }
+.color { background: #f3eac2; }
+.anime { background: #f7d9c4; }
+
+/* About Section */
+.about {
+  padding: 2rem;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.member {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
+}
+
+input, textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+footer {
+  background: #004d00;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
